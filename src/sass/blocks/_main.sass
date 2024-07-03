@@ -1,0 +1,210 @@
+.promo
+    &__btn
+        position: relative
+        color: $main-color
+        background-color: $accent-brand
+        padding: 16px 60px 16px 24px
+        border-radius: 10px
+        cursor: pointer
+        &::after
+            position: absolute
+            content: ''
+            background-image: url(../img/arrow-white.svg)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 24px
+            height: 24px
+            right: 10px
+            bottom: 50%
+            transform: translateY(50%)
+    &__img
+        height: 682px
+        width: 100%
+        & img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 10px
+
+.features
+    &__content
+        width: 100%
+        gap: 40px
+    &__block
+        gap: 16px
+        & img:nth-child(1)
+            margin-bottom: 8px
+            padding: 12px
+            background-color: $neutral-system
+            border-radius: 600px
+        & p:nth-child(2)
+            font-family: $inter-bold
+            color: $bright-color
+            font-size: 24px
+            line-height: 32px
+.content
+    &__block
+        gap: 122px
+        & p:nth-child(1)
+            width: 488px
+            margin-right: 100px
+            font-size: 24px
+            font-weight: 400
+            line-height: 133%
+        & p:nth-child(2)
+            width: 590px
+            line-height: 150%
+            font-weight: 400
+    &__box
+        gap: 40px
+
+    &__wrap
+        gap: 124px
+        justify-content: space-between
+    &__text
+        display: flex
+        gap: 28px
+    &__text p:nth-child(1)
+        font-family: $inter-bold
+        font-size: 30px
+        line-height: 38px
+        color: $bright-color
+
+.clients
+    background-color: $neutral-system
+    &__gallery
+        width: 100%
+        position: relative
+    &__card
+        box-shadow: 0 2px 8px 0 rgba(71, 74, 89, 0.08), 0 2px 2px 0 rgba(71, 74, 89, 0.02)
+        background: $main-color
+        border-radius: 10px
+        padding: 30px
+    &__inner
+        display: flex
+        gap: 24px
+        padding: 0 52px
+    &__main
+        display: flex
+        gap: 16px
+        align-items: center
+        justify-content: flex-start
+
+.splide__arrow
+    opacity: 0.2
+    cursor: pointer
+    position: absolute
+    &:nth-child(1)
+        left: -50px
+        top: 50%
+        transform: translatey(-50%)
+        transform: scale(-1, -1)
+    &:nth-child(2)
+        right: -50px
+        top: 50%
+        transform: translatey(-50%)
+
+.about
+    &__inner
+        gap: 60px
+    &__main
+        display: flex
+        align-items: center
+        gap: 122px
+        & p
+            width: 590px
+            font-weight: 400
+            line-height: 150%
+    &__content
+        display: flex
+        gap: 20px
+    &__card
+        gap: 2px
+        & p:nth-child(2)
+            font-family: $inter-bold
+            font-weight: 700
+            font-size: 16px
+            line-height: 150%
+            color: $bright-color
+    &__img
+        margin-bottom: 14px
+
+.table
+    &__inner
+        background-color: $neutral-system
+        padding: 60px
+        border-radius: 24px
+        gap: 122px
+        display: flex
+    &__content
+        width: 50%
+        display: flex
+        flex-direction: column
+    &__info
+        display: flex
+        gap: 36px
+        align-items: center
+        justify-content: space-between
+        &:not(:last-child)
+            margin-bottom: 24px
+        & a
+            color: inherit
+            &:nth-child(1)
+                text-decoration: underline
+                border: 1px solid $neutral-border
+                background-color: $main-color
+                border-radius: 8px
+                padding: 10px 16px
+                width: 100%
+            &:nth-child(2)
+                cursor: pointer
+                border-radius: 8px
+                padding: 10px 16px
+                background-color: $accent-brand
+                font-weight: 700
+                font-size: 14px
+                line-height: 143%
+                text-align: center
+                color: $neutral-system
+
+.questions
+    &__inner
+        gap: 122px
+        display: flex
+    &__content
+        width: 50%
+    &__link
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        cursor: pointer
+        &::after
+            position: absolute
+            content: ''
+            background-image: url(../img/arr.svg)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 32px
+            height: 32px
+            right: 0
+            top: 0
+    &__link.questions__link-active
+        &::after
+            position: absolute
+            content: ''
+            background-image: url(../img/arr-active.svg)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 32px
+            height: 32px
+            right: 0
+            top: 0
+    &__item
+        padding: 32px 0
+        border-bottom: 1px solid $neutral-border
+        display: flex
+        flex-direction: column
+    &__sub
+        &-item
+            margin-right: 32px
